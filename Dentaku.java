@@ -4,20 +4,19 @@
     int val2 = 0;
     String ope;
     int kekka;
-
     String opeStr[] = {"kake", "waru", "tasu", "hiku"};
     boolean errFlag = true;
     ope = args[1];
 
     if(args.length != 3){
-      errDisp("ˆø”‚Í3ŒÂ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+      errDisp("å¼•æ•°ã¯3å€‹å…¥åŠ›ã—ã¦ãã ã•ã„");
     }
 
     try{
       val1 = Integer.parseInt(args[0]);
       val2 = Integer.parseInt(args[2]);
     }catch(NumberFormatException e){
-      errDisp("”’l‚Å‚È‚¢’l‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚·");
+      errDisp("æ•°å€¤ã§ãªã„å€¤ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã™");
     }
 
     for(int i = 0; i < 4; i++){
@@ -27,7 +26,7 @@
     }
 
     if(errFlag == true){
-      errDisp("‰‰Zq‚Í kake waru tasu hiku ‚Ì4‚Â‚Å‚·");
+      errDisp("æ¼”ç®—å­ã¯ kake waru tasu hiku ã®4ã¤ã§ã™");
     }
 
     if(ope.equals("kake")){
@@ -38,18 +37,18 @@
       kekka = val1 - val2;
     }else{
       if(val2 == 0){
-        errDisp("0 ‚ÅŠ„‚ë‚¤‚Æ‚µ‚Ü‚µ‚½");
+        errDisp("0 ã§å‰²ã‚ã†ã¨ã—ã¾ã—ãŸ");
       }
       kekka = val1 / val2;
     }
 
-    System.out.println("“ü—Í‚³‚ê‚½®‚Í" + val1 + " " + ope + " " + val2 + "‚Å‚·");
-    System.out.println("ŒvZŒ‹‰Ê‚Í " + kekka + " ‚Å‚·");
+    System.out.println("å…¥åŠ›ã•ã‚ŒãŸå¼ã¯" + val1 + " " + ope + " " + val2 + "ã§ã™");
+    System.out.println("è¨ˆç®—çµæœã¯ " + kekka + " ã§ã™");
   }
 
   private static void errDisp(String errStr){
     System.out.println(errStr);
-    System.out.println("Usage : java dentaku ”’l@‰‰Zq@”’l");
+    System.out.println("Usage : java dentaku æ•°å€¤ã€€æ¼”ç®—å­ã€€æ•°å€¤");
     System.exit(0);
   }
 }
