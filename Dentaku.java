@@ -1,7 +1,6 @@
  class Dentaku{
   public static void main(String[] args){
-    int val1 = 0;
-    int val2 = 0;
+    int val1 = 0; int val2 = 0;
     String ope;
     int kekka;
     String opeStr[] = {"kake", "waru", "tasu", "hiku"};
@@ -24,7 +23,6 @@
         errFlag = false;
       }
     }
-
     if(errFlag == true){
       errDisp("演算子は kake waru tasu hiku の4つです");
     }
@@ -41,7 +39,6 @@
       }
       kekka = val1 / val2;
     }
-
     System.out.println("入力された式は" + val1 + " " + ope + " " + val2 + "です");
     System.out.println("計算結果は " + kekka + " です");
   }
